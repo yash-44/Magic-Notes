@@ -77,7 +77,7 @@ function shownotes() {
     let html = ''
     notesObj.forEach(function (element, index) {
         // console.log(element,index)
-        html += `<div class="notecard my-2 mx-2" style="width: 18rem;">
+        html += `<div class="notecard my-2 mx-2 card" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">${element.title}</h5><hr>
             <p class="card-text">${element.text}</p>
