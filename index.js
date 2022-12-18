@@ -100,7 +100,7 @@ function shownotes() {
 // for remove or delete notes 
 
 function deletenotes(index) {
-    // console.log('delete',index)
+    
     if(confirm(`Are you sure for delete this note!`)){
         let notes = localStorage.getItem('notes')
 
@@ -120,7 +120,6 @@ function deletenotes(index) {
 
 // for search
 
-
 let search = document.getElementById('searchTxt')
 
 search.addEventListener('input', function(){
@@ -132,9 +131,9 @@ search.addEventListener('input', function(){
     Array.from(noteCards).forEach(function(element){
         
         // console.log(noteCards)
-        console.log(element)
-        let cardTxt = element.getElementsByTagName('p')[0].innerText
-        let titletxt = element.getElementsByTagName('h5')[0].innerText
+        // console.log(element)
+        let cardTxt = element.getElementsByTagName('p')[0].innerText.toLowerCase()
+        let titletxt = element.getElementsByTagName('h5')[0].innerText.toLowerCase()
         // console.log(titlet)
         
         
